@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home-header--wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 90px;
+}
+
+.menu {
+    width: 80%;
+    max-width: 600px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-link a {
+    text-decoration: none;
+    color: #111111;
+}
+
+.menu-link a:hover {
+    color: #b12a27;
+}
+
+.hero {
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-property {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.main-property--link {
+    width: 100%;
+    max-width: 443px;
+    margin: 20px auto;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-property--link:hover .overlay {
+    display: flex;
+    transition: 300ms ease-in-out;
+}
+
+.main-property--link a {
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.overlay {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #111111;
+}
+
+.main-quicklinks--wrap {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #68953d;
+    padding: 35px 5px;
+}
+
+.main-quicklinks--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((100% / 2) - 15px);
+    margin: 5px auto;
+    background-color: rgb(231, 68, 63);
+    padding: 20px 2px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 0 0 #111;
+}
+
+.main-quicklinks--link a {
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.main-content {
+    display: flex;
+    flex-flow: row wrap;
+    width: calc(100% - 30px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-content--section,
+.main-content--aside {
+    width: 100%;
+    padding: 0;
+}
+
+.main-content--section img {
+    width: 100%;
+}
+
+footer {
+    background-color: #325d08;
+}
+
+.footer-wrap {
+    width: calc(100% - 30px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-cards {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 35px auto;
+}
+
+.footer-card {
+    width: 100%;
+    color: #ffffff;
+}
+
+.footer-card .contacts {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-card .contacts a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-card .contacts a:hover {
+    color: #b12a27;
+}
+
+.footer-card .social {
+    max-width: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-card .social a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 42px;
+}
+
+.footer-card .social a:hover {
+    color: #b12a27;
+}
+
+.footer-card h2 {
+    color: #b12a27;
+}
+
+.footer-credits {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-credits span {
+    margin: 10px 0;
+}
+
+.footer-credits a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-credits a:hover {
+    color: #b12a27;
+}
+
+@media (min-width: 480px) {
+    .menu {
+        display: flex;
+    }
+    .main-property--link {
+        width: calc((100% / 2) - 15px);
+    }
+}
+
+@media (min-width: 768px) {
+    .main-property--link {
+        width: calc((100% / 4) - 15px);
+    }
+    .main-quicklinks--link {
+        width: calc((100% / 4) - 15px);
+        margin: 0 auto;
+    }
+    .main-content--section {
+        width: 60%;
+        padding: 20px;
+    }
+    .main-content--aside {
+        width: 40%;
+        padding: 20px;
+    }
+    .footer-card {
+        width: calc((100% / 3) - 15px);
+        margin: 0 auto;
+    }
+    .footer-credits {
+        flex-direction: row;
+    }
+}
